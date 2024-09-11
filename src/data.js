@@ -13,7 +13,7 @@ const data=[
         id:1,
         title:"UNIVERSITY HRMS",
         project:"Website",
-        client:"Education dept.",
+        client:"Education Department",
         language:" HTML, CSS,  JS,  Bootstrap,  Express JS,  MySQL",
         preview_url:"https://university-hrms.thecodebucket.com/",
         image:"/public/img/university_hrms.jpg"

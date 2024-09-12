@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card.jsx';
 
-const Portfolio = ({ info }) => {
+const Portfolio = ({info}) => {
   return (
     <div className="px-4 mb-10">
       {/* Portfolio Title */}
@@ -28,7 +28,7 @@ const Portfolio = ({ info }) => {
      {/* Responsive Project Cards */}
 <section className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-8 mt-10">
   {info.map((infos) => (
-    <Card key={infos.id} {...infos} />
+    <Card {...infos} />
   ))}
 </section>
 

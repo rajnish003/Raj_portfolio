@@ -12,7 +12,7 @@ import data from './data';
 import Spinner from './components/Spinner';
 
 const App = () => {
-  const [info, setInfo] = useState(data);
+ const info=data;
   const [loading, setLoading] = useState(false);
   const location = useLocation();
 

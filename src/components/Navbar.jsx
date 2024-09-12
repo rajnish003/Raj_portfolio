@@ -14,7 +14,7 @@ const Navbar = () => {
 
           {/* Hamburger Menu Icon */}
           <div className="lg:hidden">
-            <button onClick={() => setOpen(!open)} className="text-3xl text-gray-700">
+            <button onClick={() => setOpen(!open)} className="text-5xl text-gray-700 mr-5">
               {open ? <HiX /> : <HiMenuAlt3 />}
             </button>
           </div>
@@ -87,8 +87,8 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           <div className={`fixed inset-0 bg-white text-[#ff9f05] transition-transform duration-300 ease-in-out transform ${open ? 'translate-x-0' : 'translate-x-full'} lg:hidden z-50`}>
-            <div className="flex justify-end p-4">
-              <button onClick={() => setOpen(false)} className="text-3xl text-gray-700">
+            <div className="flex justify-end p-4 ">
+              <button onClick={() => setOpen(false)} className="text-5xl text-gray-700 mr-3">
                 <HiX />
               </button>
             </div>

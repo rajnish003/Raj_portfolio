@@ -8,7 +8,7 @@ const About = () => {
       <div className='flex flex-col'>
         {/* Title Section */}
         <div className='flex justify-center items-center mb-6'>
-          <h3 className='text-3xl sm:text-4xl md:text-5xl font-black text-[#ff9f05] mt-14'>
+          <h3 className='text-5xl sm:text-4xl md:text-5xl font-black text-[#ff9f05] mt-14'>
             ABOUT <span className='text-gray-700'>ME</span>
           </h3>
         </div>

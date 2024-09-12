@@ -11,12 +11,12 @@ const Card = ({ title, project, client, language, preview_url, image }) => {
       {/* Project and Client Details */}
       <div className="flex justify-between items-center mb-2 text-sm sm:text-base">
         <div className="flex items-center gap-1 text-[#666666]">
-          <FaFileAlt size={12} color="#666666" />
+          <FaFileAlt size={15} color="#666666" />
           <span className="font-semibold text-[#666666]">Project:</span>{" "}
           {project}
         </div>
         <div className="flex items-center gap-1 text-[#666666]">
-          <FaUser size={12} color="#666666" />
+          <FaUser size={15} color="#666666" />
           <span className="font-semibold text-[#666666]">Client:</span> {client}
         </div>
       </div>

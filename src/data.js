@@ -2,12 +2,12 @@
 const data=[
     {
         id:1,
-        title:"A N SINHA INSTITUE OF SOCIAL STUDIES",
+        title:"A N SINHA INSTITUTE OF SOCIAL STUDIES",
         project:"Website",
         client:"AN Sinha college",
         language:" HTML, CSS,  JS,  Bootstrap,  Express JS,  MySQL",
         preview_url:"https://ansiss.res.in/",
-        image:"/img/anSingha.jpg"
+        image:"/img/AnSingha.png"
     },
     {
         id:1,

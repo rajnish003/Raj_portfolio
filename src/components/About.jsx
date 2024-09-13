@@ -80,9 +80,12 @@ const About = () => {
 
         {/* Download CV Button */}
         <div className='flex justify-center mt-6'>
+        <a target='blank' href="/documents/2_Rajnish_Resume.pdf">
           <button className='px-4 py-2 sm:px-6 sm:py-3 border-2 border-[#ff9f05] text-gray-700 rounded-full shadow-md font-bold transition-colors duration-300 ease-in-out hover:bg-[#ff9f05] hover:text-white'>
-            <a target='blank' href="/public/documents/2_Rajnish_Resume.pdf">DOWNLOAD CV</a>
+            DOWNLOAD CV
           </button>
+          </a>
+
         </div>
 
         {/* Divider */}

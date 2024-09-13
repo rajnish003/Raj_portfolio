@@ -12,7 +12,7 @@ import data from './data';
 import Spinner from './components/Spinner';
 
 const App = () => {
- const info=data;
+  const info = data;
   const [loading, setLoading] = useState(false);
   const location = useLocation();
 
@@ -27,18 +27,23 @@ const App = () => {
   }, [location]);
 
   return (
-    <div className="">
+    <div className="min-h-screen flex flex-col">
+      {/* Navbar should stick to the top */}
       <Navbar />
-      {loading && <Spinner />}
-      <Routes>
-        <Route path="/" element={<MainHeader />}>
-          <Route path="/" index element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Portfolio" element={<Portfolio info={info} />} />
-          <Route path="/Blog" element={<Blog />} />
-        </Route>
-      </Routes>
+
+      {/* Main content */}
+      <div className="flex-grow container mx-auto p-4 md:p-8">
+        {loading && <Spinner />}
+        <Routes>
+          <Route path="/" element={<MainHeader />}>
+            <Route path="/" index element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/Portfolio" element={<Portfolio info={info} />} />
+            <Route path="/Blog" element={<Blog />} />
+          </Route>
+        </Routes>
+      </div>
     </div>
   );
 };

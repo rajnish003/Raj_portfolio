@@ -1,8 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+  const navigate=useNavigate();
+
+  function clickHandler(){
+    navigate("/About")
+  }
+
   return (
-    <div className="flex flex-col lg:flex-row justify-center lg:justify-around items-center min-h-screen p-4">
+    <div className="flex flex-col lg:flex-row justify-between lg:justify-between items-center min-h-screen p-4">
       {/* Image Section */}
       <div className="flex justify-center items-center mb-8 lg:mb-0 lg:ml-8 pb-10">
         <img
@@ -31,11 +39,10 @@ const Home = () => {
           Check out my portfolio to see my work!
         </p>
 
-        <a href="/About" className="mt-6">
-          <button className="px-4 py-2 border-2 border-[#ff9f05] text-gray-600 rounded-full shadow-md hover:bg-[#ff9f05] hover:text-gray-700 font-bold transition duration-300 w-full sm:w-auto">
+       
+          <button onClick={clickHandler} className="px-4 py-2 border-2 border-[#ff9f05] text-gray-600 rounded-full shadow-md hover:bg-[#ff9f05] hover:text-gray-700 font-bold transition duration-300 w-full sm:w-auto mt-6">
             MORE ABOUT ME
           </button>
-        </a>
       </div>
     </div>
   );

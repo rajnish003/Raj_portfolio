@@ -121,7 +121,7 @@ const About = () => {
               <p className='mt-4 text-xl font-bold text-gray-600'>JAVA</p>
             </div>
             <div className='flex flex-col items-center'>
-              <Circle percentage={60} />
+              <Circle percentage={70} />
               <p className='mt-4 text-xl font-bold text-gray-600'>REACT</p>
             </div>
             <div className='flex flex-col items-center'>
